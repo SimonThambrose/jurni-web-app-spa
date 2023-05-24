@@ -1,0 +1,65 @@
+﻿/*#region Color palette */
+
+//$PRIMARY: #PRIMARY;
+//$SECONDARY: #SECONDARY;
+//$TERTIARY: #TERTIARY;
+//$QUATERNARY: #QUATERNARY;
+//$QUINARY: #QUINARY;
+//$SENARY: #SENARY;
+
+/*#endregion */
+
+
+/*#region Other colors */
+
+$black: #000000;
+$white: #ffffff;
+$light-gray: #cecece;
+$dark-gray: #6b6b6b;
+$success: #2ecc71;
+$warning: #f1c40f;
+$danger: #e73030;
+
+/*#endregion */
+
+
+/*#region Text colors */
+
+$text-primary: $black;
+$text-secondary: $dark-gray;
+$text-hover: $light-gray;
+//$text-active: $TEXT-ACTIVE;
+$text-success: $success;
+$text-warning: $warning;
+$text-alert: $danger;
+
+/*#endregion */
+
+
+/*#region Background colors */
+
+//$background-primary: #PRIMARY;
+//$background-secondary: #SECONDARY;
+
+// Button default colors
+//$btn-primary: $PRIMARY;
+//$btn-primary-hover: lighten($PRIMARY, 10%);
+//$btn-primary-active: darken($PRIMARY, 10%);
+//
+//$btn-secondary: $SECONDARY;
+//$btn-secondary-hover: lighten($SECONDARY, 10%);
+//$btn-secondary-active: darken($SECONDARY, 10%);
+
+$btn-success: $success;
+$btn-success-hover: lighten($success, 10%);
+$btn-success-active: darken($success, 10%);
+
+$btn-warning: $warning;
+$btn-warning-hover: lighten($warning, 10%);
+$btn-warning-active: darken($warning, 10%);
+
+$btn-alert: $danger;
+$btn-alert-hover: lighten($danger, 10%);
+$btn-alert-active: darken($danger, 10%);
+
+/*#endregion */

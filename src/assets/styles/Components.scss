@@ -1,0 +1,26 @@
+﻿@mixin defaultComponents() {
+  @include button();
+  @include input();
+}
+
+// Button component
+@mixin button() {
+  // Default button values
+  button {
+    
+  }
+  button:hover {
+    
+  }
+  button:active {
+    
+  }
+}
+
+// Input component
+@mixin input() {
+  // Default input values
+  input {
+
+  }
+}
