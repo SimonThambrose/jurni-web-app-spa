@@ -1,0 +1,57 @@
+﻿/*#region Color palette */
+
+$jurni-dark-blue: #478dc9;
+$jurni-light-blue: #8ac5f4;
+$jurni-light-green: #86eda5;
+
+/*#endregion */
+
+
+/*#region Other colors */
+
+$black: #000000;
+$white: #ffffff;
+$light-gray: #cecece;
+$dark-gray: #6b6b6b;
+$success: #2ecc71;
+$warning: #f1c40f;
+$danger: #e73030;
+
+/*#endregion */
+
+
+/*#region Text colors */
+
+$text-primary: $black;
+$text-secondary: $dark-gray;
+$text-success: $success;
+$text-warning: $warning;
+$text-alert: $danger;
+
+/*#endregion */
+
+
+/*#region Background colors */
+
+$background-primary: $white;
+$background-secondary: lighten($jurni-light-blue, 10%);
+$header-background: $background-secondary;
+
+// Button default colors
+$btn-primary: $jurni-dark-blue;
+$btn-primary-hover: lighten($btn-primary, 10%);
+$btn-primary-active: darken($btn-primary, 10%);
+
+$btn-success: $success;
+$btn-success-hover: lighten($success, 10%);
+$btn-success-active: darken($success, 10%);
+
+$btn-warning: $warning;
+$btn-warning-hover: lighten($warning, 10%);
+$btn-warning-active: darken($warning, 10%);
+
+$btn-alert: $danger;
+$btn-alert-hover: lighten($danger, 10%);
+$btn-alert-active: darken($danger, 10%);
+
+/*#endregion */
