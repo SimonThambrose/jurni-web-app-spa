@@ -36,6 +36,7 @@ $text-alert: $danger;
 $background-primary: $white;
 $background-secondary: lighten($jurni-light-blue, 10%);
 $header-background: $background-secondary;
+$footer-background: darken($jurni-dark-blue, 30%);
 
 // Button default colors
 $btn-primary: $jurni-dark-blue;

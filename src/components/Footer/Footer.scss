@@ -1,0 +1,23 @@
+@import "../../assets/styles/Colors";
+
+.footer {
+  background-color: $footer-background;
+  color: $white;
+}
+
+div [class *= 'footer-content__element-links-'] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 2vh;
+}
+
+.footer-content__element > .footer-content__element-disclaimers-row {
+  background-color: darken($footer-background, 10%);
+}
+
+.footer-content__element-disclaimers-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
