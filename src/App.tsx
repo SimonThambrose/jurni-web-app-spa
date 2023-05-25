@@ -4,17 +4,15 @@ import './App.css';
 import AppRoutes from './AppRoutes';
 
 const App: React.FC = () => {
-  return (
-      <div>
+    return (
         <Router>
-          <Routes>
-            {AppRoutes.map((route, index) => {
-              return <Route key={index} path={route['path']} element={route['element']} />;
-            })}
-          </Routes>
+            <Routes>
+                {AppRoutes.map((route, index) => {
+                    return <Route key={index} path={route['path']} element={route['element']}/>;
+                })}
+            </Routes>
         </Router>
-      </div>
-  )
+    )
 }
 
 export default App;

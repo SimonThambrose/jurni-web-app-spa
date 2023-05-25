@@ -1,20 +1,25 @@
-﻿import React from 'react'
-import './Style.css'
+﻿import React from "react"
+import "./Style.css"
+import Header from "../components/Header/Header";
+import {Col, Row} from "antd";
+import Footer from "../components/Footer/Footer";
 
 const Main: React.FC = () => {
     return (
-        <div>
+        <>
+            <Header activePage='/'/>
             <div className='home'>
-                <div className='home-content'>
-                    <div className='home-content__element'>
+                <Row className='home-content'>
+                    <Col className='home-content__element' offset='1' span='22'>
                         <h1 className='home-content__element-welcome-message' data-cy='homepage-welcome-message'>
                             {new Date().getHours() < 12 ? 'Good morning! ' : 'Hello! '}
                             This is the home page!
                         </h1>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
             </div>
-        </div>
+            <Footer/>
+        </>
     )
 }
 

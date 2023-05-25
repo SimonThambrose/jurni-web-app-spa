@@ -1,11 +1,8 @@
 ﻿/*#region Color palette */
 
-//$PRIMARY: #PRIMARY;
-//$SECONDARY: #SECONDARY;
-//$TERTIARY: #TERTIARY;
-//$QUATERNARY: #QUATERNARY;
-//$QUINARY: #QUINARY;
-//$SENARY: #SENARY;
+$jurni-dark-blue: #478dc9;
+$jurni-light-blue: #8ac5f4;
+$jurni-light-green: #86eda5;
 
 /*#endregion */
 
@@ -27,8 +24,6 @@ $danger: #e73030;
 
 $text-primary: $black;
 $text-secondary: $dark-gray;
-$text-hover: $light-gray;
-//$text-active: $TEXT-ACTIVE;
 $text-success: $success;
 $text-warning: $warning;
 $text-alert: $danger;
@@ -38,17 +33,14 @@ $text-alert: $danger;
 
 /*#region Background colors */
 
-//$background-primary: #PRIMARY;
-//$background-secondary: #SECONDARY;
+$background-primary: $white;
+$background-secondary: lighten($jurni-light-blue, 10%);
+$header-background: $background-secondary;
 
 // Button default colors
-//$btn-primary: $PRIMARY;
-//$btn-primary-hover: lighten($PRIMARY, 10%);
-//$btn-primary-active: darken($PRIMARY, 10%);
-//
-//$btn-secondary: $SECONDARY;
-//$btn-secondary-hover: lighten($SECONDARY, 10%);
-//$btn-secondary-active: darken($SECONDARY, 10%);
+$btn-primary: $jurni-dark-blue;
+$btn-primary-hover: lighten($btn-primary, 10%);
+$btn-primary-active: darken($btn-primary, 10%);
 
 $btn-success: $success;
 $btn-success-hover: lighten($success, 10%);
