@@ -2,7 +2,6 @@
 import {BlogValues} from "../Models";
 import {fetchAllBlogs} from "../fetchers/BlogFetch";
 import Header from "../components//Header/Header";
-import {Content} from "antd/es/layout/layout";
 import {Col, Row} from "antd";
 import Footer from "../components/Footer/Footer";
 

@@ -14,19 +14,19 @@ const AppRoutes = [
         path: '/about',
         pageName: 'About us',
         element: <About/>,
-        description: ''
+        description: 'This page provides information about the organization. It includes details such as the organisation`s mission, team members, and achievements.'
     },
     {
         path: '/matchmaker',
         pageName: 'Matchmaker',
         element: <Matchmaker/>,
-        description: ''
+        description: 'It is possible to choose a plan for the Matchmaker application created by Jurni. A user can choose between the free or premium plan, or is able to request an enterprise plan.'
     },
     {
         path: '/contact',
         pageName: 'Contact',
         element: <Contact/>,
-        description: ''
+        description: 'This page provides contact information for the organization. It includes details such as the organisation`s address, phone number, and email address. As well as a contact form.'
     },
 ];
 
