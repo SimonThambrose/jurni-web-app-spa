@@ -1,0 +1,47 @@
+/*#region Color palette */
+/*#endregion */
+/*#region Other colors */
+/*#endregion */
+/*#region Text colors */
+/*#endregion */
+/*#region Background colors */
+/*#endregion */
+.footer {
+  background-color: #1b3e5c;
+  color: #ffffff;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+div [class*=footer-content__element-links-] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-content__element > .footer-content__element-disclaimers-row {
+  background-color: #0f2335;
+}
+
+.footer-content__element-map {
+  margin: 10px 0 10px 0;
+}
+.footer-content__element-map .footer-map {
+  width: 100%;
+  height: 30vh;
+  border: none;
+}
+
+.footer-content__element-disclaimers-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-content__element-disclaimers-col .footer-copyright {
+  margin-right: 30px;
+}
+
+/*# sourceMappingURL=Footer.css.map */
