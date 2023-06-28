@@ -13,8 +13,8 @@ $black: #000000;
 $white: #ffffff;
 $light-gray: #cecece;
 $dark-gray: #6b6b6b;
-$success: #2ecc71;
-$warning: #f1c40f;
+$success: #00b300;
+$warning: #ffcc00;
 $danger: #e73030;
 
 /*#endregion */
@@ -38,21 +38,12 @@ $background-secondary: lighten($jurni-light-blue, 10%);
 $header-background: $background-secondary;
 $footer-background: darken($jurni-dark-blue, 30%);
 
-// Button default colors
-$btn-primary: $jurni-dark-blue;
-$btn-primary-hover: lighten($btn-primary, 10%);
-$btn-primary-active: darken($btn-primary, 10%);
-
+// Button background colors
+$btn-primary: #1677ff;
+$btn-secondary: $white;
 $btn-success: $success;
-$btn-success-hover: lighten($success, 10%);
-$btn-success-active: darken($success, 10%);
-
 $btn-warning: $warning;
-$btn-warning-hover: lighten($warning, 10%);
-$btn-warning-active: darken($warning, 10%);
-
 $btn-alert: $danger;
-$btn-alert-hover: lighten($danger, 10%);
-$btn-alert-active: darken($danger, 10%);
+$btn-disabled: #0000000A;
 
 /*#endregion */

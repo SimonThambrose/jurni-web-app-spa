@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
                     <Row className='footer-content__element-links'>
                         <Col className='footer-content__element-links-jurni' data-cy='footer-links-jurni' span='7'>
                             <h3 className='footer-head-jurni'>Jurni</h3>
-                            <Link to='' className='footer-link'>About us</Link>
+                            <Link to='/about' className='footer-link'>About us</Link>
                             <Link to='' className='footer-link'>Lorem ipsum</Link>
                             <Link to='' className='footer-link'>Dolor sit</Link>
                             <Link to='' className='footer-link'>Amet consectetur</Link>
@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
                         </Col>
                         <Col className='footer-content__element-links-contact' data-cy='footer-links-contact' offset='1' span='7'>
                             <h3 className='footer-head-contact'>Contact</h3>
-                            <Link to='contact' className='footer-link'>Contact us</Link>
+                            <Link to='/contact' className='footer-link'>Contact us</Link>
                             <Link to='' className='footer-link'>Lorem ipsum</Link>
                         </Col>
                     </Row>
@@ -38,10 +38,10 @@ const Footer: React.FC = () => {
                     <Row className='footer-content__element-disclaimers-row'>
                         <Col className='footer-content__element-disclaimers-col' data-cy='footer-disclaimers' offset='1' span='10'>
                             <p className='footer-copyright'>Jurni © 2023 All rights reserved.</p>
-                            <Link to='' className='footer-link'>Terms & Conditions</Link>
-                            <Link to='' className='footer-link'>Privacy Policy</Link>
-                            <Link to='' className='footer-link'>Cookie Policy</Link>
-                            <Link to='' className='footer-link'>Disclaimer</Link>
+                            <Link to='' className='disclaimer-link'>Terms & Conditions</Link>
+                            <Link to='' className='disclaimer-link'>Privacy Policy</Link>
+                            <Link to='' className='disclaimer-link'>Cookie Policy</Link>
+                            <Link to='' className='disclaimer-link'>Disclaimer</Link>
                         </Col>
                     </Row>
                 </Col>
