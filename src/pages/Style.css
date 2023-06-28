@@ -6,5 +6,9 @@
 /*#endregion */
 /*#region Background colors */
 /*#endregion */
+.login {
+  display: flex;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=Style.css.map */

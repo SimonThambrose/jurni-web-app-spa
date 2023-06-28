@@ -2,6 +2,7 @@
 import About from "./pages/About";
 import Matchmaker from "./pages/Matchmaker";
 import Contact from "./pages/Contact";
+import Login from "./pages/auth/Login";
 
 const AppRoutes = [
     {
@@ -27,6 +28,12 @@ const AppRoutes = [
         pageName: 'Contact',
         element: <Contact/>,
         description: 'This page provides contact information for the organization. It includes details such as the organisation`s address, phone number, and email address. As well as a contact form.'
+    },
+    {
+        path: '/login',
+        pageName: 'Login',
+        element: <Login/>,
+        description: 'This page provides a login form for the user to login to the web application.'
     },
 ];
 

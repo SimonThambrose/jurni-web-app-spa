@@ -29,7 +29,7 @@ const Header: React.FC<HeaderProps> = ({activePage}) => {
                 <div className='header-content__element'>
                     <div className='header-content__element-links'>
                         {AppRoutes.map((route, index) => (
-                            route['pageName'] === undefined ? null : (
+                            route['pageName'] === undefined || route['pageName'] === 'Login' || route['pageName'] === 'Register' ? null : (
                                 <Link key={index} to={route['path']} data-cy={`header-link-${route['pageName']}`}
                                       className={checkActivePage(route['path'])}>{route['pageName']}</Link>
                             )
@@ -44,8 +44,8 @@ const Header: React.FC<HeaderProps> = ({activePage}) => {
                         </div>
                         :
                         <div className='header-content__element-buttons'>
-                            <Button className='header-log-in-button' type='primary'>Log in</Button>
-                            <Button className='header-register-button' type='primary'>Register</Button>
+                            <Link to='/login'><Button className='header-log-in-button' type='primary'>Log in</Button></Link>
+                            <Link to='/register'><Button className='header-register-button' type='primary'>Register</Button></Link>
                         </div>
                     }
                 </div>
