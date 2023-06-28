@@ -1,0 +1,45 @@
+/*#region Color palette */
+/*#endregion */
+/*#region Other colors */
+/*#endregion */
+/*#region Text colors */
+/*#endregion */
+/*#region Background colors */
+/*#endregion */
+.header {
+  background: #b9dcf8;
+  font-weight: 200;
+}
+.header .header-content {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-logo {
+  max-width: 169px;
+  height: 7vh;
+  margin-left: 20px;
+}
+.header .header-content__element-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 4vh;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+.header .header-content__element-link:hover {
+  color: #6ea5d5;
+}
+.header .active {
+  color: #478dc9;
+  font-weight: 350;
+}
+.header .header-content__element-buttons > * {
+  margin-right: 20px;
+}
+.header .header-content__element-user > * {
+  margin-right: 20px;
+}
+
+/*# sourceMappingURL=Header.css.map */

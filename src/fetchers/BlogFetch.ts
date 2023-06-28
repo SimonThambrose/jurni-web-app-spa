@@ -1,5 +1,4 @@
 ﻿import axios from "axios";
-import {BlogValues} from "../Models";
 
 export const fetchAllBlogs = async () => {
     try {

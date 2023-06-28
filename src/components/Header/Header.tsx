@@ -38,14 +38,14 @@ const Header: React.FC<HeaderProps> = ({activePage}) => {
                 </div>
                 <div className='header-content__element'>
                     {loggedIn ?
-                        <div className='header-content__element-buttons'>
-                            <Button className='header-log-in-button' type='primary'>Log in</Button>
-                            <Button className='header-register-button' type='primary'>Register</Button>
-                        </div>
-                        :
                         <div className='header-content__element-user'>
                             <p className='header-user-name' data-cy='header-user-name'>Simon Kuperus</p>
                             <Button className='header-log-out-button' type='primary'>Log out</Button>
+                        </div>
+                        :
+                        <div className='header-content__element-buttons'>
+                            <Button className='header-log-in-button' type='primary'>Log in</Button>
+                            <Button className='header-register-button' type='primary'>Register</Button>
                         </div>
                     }
                 </div>
