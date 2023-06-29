@@ -1,7 +1,7 @@
 ﻿import React, {useState} from "react";
 import {Button, Form, Input, message} from "antd";
 import './LoginForm.css'
-import {fetchUser} from "../../fetchers/LoginFetch";
+import {fetchUser} from "../../fetchers/AuthFetch";
 import {Link} from "react-router-dom";
 
 const LoginForm: React.FC = () => {

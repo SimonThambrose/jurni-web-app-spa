@@ -1,8 +1,8 @@
 ﻿import React, {useState} from "react";
 import {Button, Form, Input, message} from "antd";
 import './RegisterForm.css'
-import {BlogValues, UserValues} from "../../Models";
-import {Link, Route} from "react-router-dom";
+import {Link} from "react-router-dom";
+import {registerUser} from "../../fetchers/AuthFetch";
 
 const RegisterForm: React.FC = () => {
     const [messageApi, contextHolder] = message.useMessage();
@@ -10,9 +10,18 @@ const RegisterForm: React.FC = () => {
     const [lastName, setLastName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    
     const handleSubmit = async (e: React.FormEvent) => {
-        
+        let response = await registerUser(firstName, lastName, email, password);
+
+        if (response === null) {
+            messageApi.open({
+                type: 'error',
+                content: 'Something went wrong! Please try again.'
+            });
+        } else {
+            window.history.back();
+        }
     };
 
     return (
@@ -44,7 +53,8 @@ const RegisterForm: React.FC = () => {
                 label="Confirm email"
                 name="confirm-email"
                 rules={[{required: true, message: 'Please confirm your email!'}]}>
-                <Input placeholder="john.doe@email.com" onChange={e => setEmail(e.target.value)}/>
+                {/* TODO: Validate email */}
+                <Input placeholder="john.doe@email.com"/>
             </Form.Item>
             <Form.Item
                 className='register-form-password'
@@ -58,7 +68,8 @@ const RegisterForm: React.FC = () => {
                 label="Confirm password"
                 name="confirm-password"
                 rules={[{required: true, message: 'Please confirm your password!'}]}>
-                <Input.Password placeholder="John'sVerySafePassw0rd!" onChange={e => setPassword(e.target.value)}/>
+                {/* TODO: Validate password */}
+                <Input.Password placeholder="John'sVerySafePassw0rd!"/>
             </Form.Item>
             <Form.Item className='register-form-email'>
                 <Button type="primary" htmlType="submit">
