@@ -1,5 +1,10 @@
 @import "../assets/styles/Colors";
 
+.login, .register {
+  display: flex;
+  justify-content: center;
+}
+
 .home {
   .text-title {
     text-align: center;
@@ -8,7 +13,7 @@
   .introduction-image {
     text-align: center;
   }
-  
+
   .home-content__element-elaboration {
     margin-top: 3vh;
   }

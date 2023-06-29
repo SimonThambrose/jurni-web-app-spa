@@ -6,6 +6,11 @@
 /*#endregion */
 /*#region Background colors */
 /*#endregion */
+.login, .register {
+  display: flex;
+  justify-content: center;
+}
+
 .home .text-title {
   text-align: center;
 }
