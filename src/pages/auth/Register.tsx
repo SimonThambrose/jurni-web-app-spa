@@ -1,16 +1,16 @@
 ﻿import React from "react";
 import Header from "../../components/Header/Header";
 import {Col, Row} from "antd";
-import LoginForm from "../../components/LoginForm/LoginForm";
+import RegisterForm from "../../components/RegisterForm/RegisterForm";
 
 const Login: React.FC = () => {
     return (
         <>
             <Header activePage=''/>
-            <div className='login'>
-                <Row className='login-content'>
-                    <Col className='login-content__element'>
-                        <LoginForm/>
+            <div className='register'>
+                <Row className='register-content'>
+                    <Col className='register-content__element'>
+                        <RegisterForm/>
                     </Col>
                 </Row>
             </div>

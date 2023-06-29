@@ -3,6 +3,7 @@ import About from "./pages/About";
 import Matchmaker from "./pages/Matchmaker";
 import Contact from "./pages/Contact";
 import Login from "./pages/auth/Login";
+import Register from "./pages/auth/Register";
 
 const AppRoutes = [
     {
@@ -38,7 +39,7 @@ const AppRoutes = [
     {
         path: '/register',
         pageName: 'Register',
-        element: <Login/>, //TODO change to register page
+        element: <Register/>,
         description: 'This page provides a registration form for the user to register to the web application.'
     }
 ];

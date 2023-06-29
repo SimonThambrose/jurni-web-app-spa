@@ -2,6 +2,7 @@
 import {Button, Form, Input, message} from "antd";
 import './LoginForm.css'
 import {fetchUser} from "../../fetchers/LoginFetch";
+import {Link} from "react-router-dom";
 
 const LoginForm: React.FC = () => {
     const [messageApi, contextHolder] = message.useMessage();
@@ -42,6 +43,7 @@ const LoginForm: React.FC = () => {
                     Log in
                 </Button>
             </Form.Item>
+            <Link to='/register' className='register'>Don't have an account? Register here.</Link>
         </Form>
     )
 }
