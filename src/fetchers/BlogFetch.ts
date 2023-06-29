@@ -10,3 +10,14 @@ export const fetchAllBlogs = async () => {
         return [];
     }
 };
+
+export const likeBlog = async (blogId: number) => {
+    try {
+        const response = await axios.put(`/api/blog/${blogId}/like`).catch((error) => {
+            throw (error.response.status);
+        });
+        return response.data;
+    } catch (error) {
+        return [];
+    }
+};

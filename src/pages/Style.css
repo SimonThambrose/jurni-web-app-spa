@@ -11,4 +11,28 @@
   justify-content: center;
 }
 
+.home .text-title {
+  text-align: center;
+}
+.home .introduction-image {
+  text-align: center;
+}
+.home .home-content__element-elaboration {
+  margin-top: 3vh;
+}
+
+.about .introduction-text-title {
+  text-align: center;
+}
+.about .introduction-image {
+  text-align: center;
+}
+.about .team-title {
+  text-align: center;
+}
+.about .team-image {
+  width: 100%;
+  height: 100%;
+}
+
 /*# sourceMappingURL=Style.css.map */

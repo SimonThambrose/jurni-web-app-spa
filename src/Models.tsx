@@ -1,4 +1,5 @@
 ﻿export interface BlogValues {
+    id: number,
     title: string,
     description: string,
     author: string,
