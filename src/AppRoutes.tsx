@@ -35,6 +35,12 @@ const AppRoutes = [
         element: <Login/>,
         description: 'This page provides a login form for the user to login to the web application.'
     },
+    {
+        path: '/register',
+        pageName: 'Register',
+        element: <Login/>, //TODO change to register page
+        description: 'This page provides a registration form for the user to register to the web application.'
+    }
 ];
 
 export default AppRoutes;
