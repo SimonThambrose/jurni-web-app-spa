@@ -9,6 +9,7 @@
 .header {
   background: #b9dcf8;
   font-weight: 200;
+  margin-bottom: 3vh;
 }
 .header .header-content {
   height: 8vh;
